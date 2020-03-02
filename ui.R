@@ -18,7 +18,7 @@ shinyUI(
         tags$head(tags$link(rel = "stylesheet", type = "text/css", href = "mystyle.css")),   
         navbarPage(
             
-            title = strong("Hydroxychloroquine suflate (HCQ suflate)"),
+            title = strong("Hydroxychloroquine sulfate (HCQ sulfate)"),
             
             tabPanel(
                 strong("HCQ concentration prediction"),
@@ -41,10 +41,10 @@ shinyUI(
                            ),
                            fluidRow(
                                column(6,
-                                      sliderInput("interval_pk1", label = "dose interval (h)", min = 0, max = 96, step = 2, value = c(12))
+                                      sliderInput("interval_pk1", label = "dose interval (h)", min = 0, max = 336, step = 6, value = c(12))
                                ),
                                column(6,
-                                      sliderInput("interval_pk2", label = "interrupted interval (h)", min = 0, max = 96, step = 2, value = c(0))
+                                      sliderInput("interval_pk2", label = "interrupted interval (h)", min = 0, max = 336, step = 6, value = c(0))
                                )
                            ),
                            fluidRow(
