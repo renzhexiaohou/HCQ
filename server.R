@@ -146,7 +146,7 @@ shinyServer(function(input, output) {
           as.data.frame()
         
         ggplot(pk) +
-          geom_line(aes(x = time/24, y = conc)) +
+          geom_line(aes(x = time/24+1, y = conc)) +
           geom_hline(yintercept = 21.1, linetype = "dashed", colour = "red") +
           scale_y_continuous(breaks = seq(0, 2000, 100)) +
           scale_x_continuous(breaks = seq(0, 7*100, 1)) +
